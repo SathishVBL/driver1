@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+   >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus Route Info"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="60sp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        />
+
+    <!-- Username EditText -->
+
+    <AutoCompleteTextView
+        android:id="@+id/enterRouteID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="enter source..."
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:textColor="#1477C6"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="Enter route ........"
+        android:textColorHint="#1477C6"
+        android:inputType="text"
+        android:paddingStart="50sp"
+        android:paddingTop="2sp"
+        android:paddingEnd="20sp"
+        android:paddingBottom="2sp"
+
+        android:layout_marginBottom="50sp"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283"
+        tools:ignore="RtlCompat" />
+<!--    android:drawableStart="@android:drawable/ic_menu_search"-->
+    <!-- Password EditText -->
+    <AutoCompleteTextView
+        android:id="@+id/enterBusID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="enter source..."
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:textColor="#1477C6"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif"
+        android:hint="Enter Bus ID ........"
+        android:textColorHint="#1477C6"
+        android:inputType="text"
+        android:paddingStart="50sp"
+        android:paddingTop="2sp"
+        android:paddingEnd="20sp"
+        android:paddingBottom="2sp"
+
+        android:layout_marginBottom="75sp"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283"
+        tools:ignore="RtlCompat" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/BtnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textStyle="bold"
+        android:textSize="35sp"/>
+
+</LinearLayout>
